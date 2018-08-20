@@ -28,28 +28,33 @@ class App extends Component {
       .filter(this.searchingFor(textInput))
       .map((country, key) => {
         return (
-          <div key={key}>
-            <a href={`https://en.wikipedia.org/wiki/${country.name}`}>
+          <div key={key} className="country__box">
+            <a
+              href={`https://en.wikipedia.org/wiki/${country.name}`}
+              className="country__name"
+            >
               <img
                 src={`https://www.countryflags.io/${country.code}/shiny/64.png`}
+                alt={`${country.name} flag`}
+                className="country__img"
               />
             </a>
-            {country.name}
+            <span>{country.name}</span>
           </div>
         );
       });
 
     return (
-      <div className="App countries__wrapper">
-        <p>miasta</p>
+      <div className="App">
         <input
+          className="search__input"
           type="text"
-          placeholder="tekst"
+          placeholder="Search country..."
           name="textInput"
           onChange={this.onChange}
           value={this.state.textInput}
         />
-        {filteredCountries}
+        <div className="countries__wrapper">{filteredCountries}</div>
       </div>
     );
   }

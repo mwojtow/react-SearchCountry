@@ -1,9 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 .App {
+  background-color: #0e2128;
+  background-image: url(bg-countries.png),
+    linear-gradient(to right, #010d12 0%, #07151a 100%);
+  background-repeat: no-repeat;
   text-align: center;
+  padding: 0 30px;
+  position: relative;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.App:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .countries__wrapper {
-  /* display: flex;
+  max-width: 1350px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; */
+  justify-content: center;
+}
+.country__box {
+  background-color: rgba(81, 124, 140, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.country__box:hover {
+  background-color: rgba(81, 124, 140, 1);
+}
+.country__box:hover img {
+  filter: brightness(130%);
+  transition: 0.4s ease;
+  transform: scale(1.1);
+}
+.country__box:hover span {
+  text-shadow: 0 0 0.01px #fff, 0 0 0.01px #fff, 0 0 0.01px #fff;
+}
+.search__input {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+  margin: 30px 0 0;
+  padding: 5px 10px 3px;
+  width: 200px;
+  height: 30px;
+  background-color: rgba(81, 124, 140, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  outline: none;
+}
+.search__input:hover,
+.search__input:focus {
+  transition: 0.4s;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(15, 73, 95, 0.9);
+}
+.search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }

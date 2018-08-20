@@ -192,10 +192,6 @@
     "code": "CG"
   },
   {
-    "name": "Congo, The Democratic Republic of the",
-    "code": "CD"
-  },
-  {
     "name": "Cook Islands",
     "code": "CK"
   },
@@ -268,7 +264,7 @@
     "code": "ET"
   },
   {
-    "name": "Falkland Islands (Malvinas)",
+    "name": "Falkland Islands",
     "code": "FK"
   },
   {
@@ -360,7 +356,7 @@
     "code": "HT"
   },
   {
-    "name": "Holy See (Vatican City State)",
+    "name": "Holy See (Vatican)",
     "code": "VA"
   },
   {
@@ -440,7 +436,7 @@
     "code": "KI"
   },
   {
-    "name": "Korea, Democratic People\"S Republic of",
+    "name": "Korea, Democratic Republic of",
     "code": "KP"
   },
   {
@@ -494,10 +490,6 @@
   {
     "name": "Macao",
     "code": "MO"
-  },
-  {
-    "name": "Macedonia, The Former Yugoslav Republic of",
-    "code": "MK"
   },
   {
     "name": "Madagascar",
@@ -648,7 +640,7 @@
     "code": "PW"
   },
   {
-    "name": "Palestinian Territory, Occupied",
+    "name": "Palestinian Territory",
     "code": "PS"
   },
   {
@@ -770,10 +762,6 @@
   {
     "name": "South Africa",
     "code": "ZA"
-  },
-  {
-    "name": "South Georgia and the South Sandwich Islands",
-    "code": "GS"
   },
   {
     "name": "Spain",
